@@ -1,0 +1,62 @@
+/* ------------ABOUT-------------- */
+/* body{
+    height: 100%;
+    display: flex;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+} */
+.container{
+   margin-bottom: 30rem;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   align-self: center;
+   
+}
+.about-container{
+    width: 100rem;
+
+    justify-self: center;
+    /* border: var(--naranja) solid 1px; */
+}
+.about-title{
+    color: #d5d5d5;
+    font-size: 9em;
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: bold;
+     margin: 5rem;
+}
+.accordion-button{
+    font-size: 2rem;
+    width: 100rem;
+    color: var(--violeta);
+     border: var(--naranja) solid 2px; 
+     font-family: "Roboto";
+     font-weight: bold;
+}
+.accordion-body{
+    font-size: 2rem;
+    background-color: #f7f7f7d0;
+    padding: 10rem;
+}
+
+.accordion-collapse{
+    border: var(--naranja) solid 1px; 
+ 
+}
+/* -----------------FOOTER------------------------- */
+
+.about-bg{
+    width: 10rem;
+}
+.cuadro-about{
+    width: 100rem;
+    transform: rotateZ(-20deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -70rem;
+    margin-top: 10rem;
+    z-index: -10;
+}
