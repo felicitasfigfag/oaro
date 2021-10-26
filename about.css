@@ -11,13 +11,13 @@
    align-items: center;
    justify-content: center; 
    align-self: center;
+
    
 }
 .about-container{
     width: 100rem;
-
     justify-self: center;
-    /* border: var(--naranja) solid 1px; */
+    overflow-x: hidden;
 }
 .about-title{
     color: #d5d5d5;
@@ -40,7 +40,10 @@
     background-color: #f7f7f7d0;
     padding: 10rem;
 }
-
+i, strong{
+    font-size: 2rem;
+    color: rgb(20, 20, 20) !important;
+}
 .accordion-collapse{
     border: var(--naranja) solid 1px; 
  
