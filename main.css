@@ -253,17 +253,13 @@ hr{
      font-family: 'Roboto Condensed', sans-serif;
      font-weight: bold;
 }
-.accordion-button{
-    font-size: 2rem;
-}
-.accordion-body{
-    font-size: 2rem;
-}
+
+
 .about-bg{
     width: 10rem;
 }
 .cuadro-about{
-    width: 100rem;
+    width: 60vw;
     transform: rotateZ(-20deg);
     position: absolute;
     right: 0;
@@ -272,6 +268,7 @@ hr{
     margin-top: 10rem;
     z-index: -10;
 }
+
 
 
 /* ____________________________RESPONSIVE______________________________ */
