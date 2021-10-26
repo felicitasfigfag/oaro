@@ -4,7 +4,10 @@
      padding: 0;
      --naranja: #e28242;
      --violeta: #2d284b;
-     --text: #7a7a7a
+     --text: #7a7a7a;
+     /* max-width: 2000px; */
+     /* overflow-x: hidden;  */
+   
  }
 
  body {
@@ -14,7 +17,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    position: absolute;
     overflow-x: hidden;
+ 
 }
  
 /* fuentes */
@@ -22,16 +27,17 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 */
-nav a{
-    margin-left: 0;
-}
+
+
 
  main{
      width: 100vw;
-     height: 100%;
-     margin-top: 5rem;
-     
+     /* height: 100%; */
+     /* margin-top: 5rem;   */
+     padding-top: 20rem;
+
  }
+
 .center{
     width: 100vw;
     display:flex;
@@ -40,6 +46,7 @@ nav a{
     justify-content: center;
     justify-items: center;
     align-items: center;
+    margin-bottom: 15rem;
 
 }
     /*---------------------- NFT ----------------------*/
@@ -52,7 +59,7 @@ nav a{
      flex-direction: column;
      justify-items: space-between;
      align-content: space-around;
-     margin-top: 6rem;
+     /* margin-top: 6rem; */
      padding-left: 30%;
      padding-right: 30%;
  }
@@ -66,12 +73,12 @@ nav a{
  .nft-img{
      width: 100%;
      margin-bottom: 3rem;
-     margin-top: -15rem;
+     /* margin-top: -15rem; */
  }
  main h3{
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
-    color:#d5d5d5;
+    color:#969696;
     text-align: center;
     margin-bottom: 3rem;
  }
@@ -111,6 +118,9 @@ nav a{
     z-index: 200 !important;
 
 }
+.artist-img-mobile{
+    display: none;
+}
 
 /* ---------------------DECO-------------------------- */
 .fig1{
@@ -125,9 +135,9 @@ nav a{
     right: 0;
 }
 
-/* ---------------------BTNS-------------------------- */
+/* ---------------------PUSH BTNS-------------------------- */
 .push{
-    /* position: absolute; */
+    /* position: absolute;  */
     width: 100vw;
     margin: auto;
     display: flex;
@@ -137,11 +147,14 @@ nav a{
     overflow: visible;
     position: sticky;
     top:40rem;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     z-index: 100;
 }
+.push-mobile{
+    display: none;
+}
 .push-price{
-    margin-top: -3%; 
+    /* margin-top: -3%;  */
     margin-left: 12%;
     width: 25rem;
     text-align: justify;
@@ -155,6 +168,9 @@ nav a{
 .push-price-title{
     font-size: 3em;
     text-align: center;
+}
+.push-btn-mobile{
+    display: none;
 }
 .push-btn{
     margin-right: 15%;
@@ -190,6 +206,9 @@ footer{
  bottom: 0; */
    
 }
+.contact-mobile{
+    display: none;
+}
 .logo-left{
     width: 18rem;
     margin: 3rem;
@@ -213,7 +232,7 @@ footer{
 /* ------------DETAILS-------------- */
 .details{
     margin-top: 15rem;
-    margin-bottom: 15rem;
+    /* margin-bottom: 15rem; */
    
 }
 hr{
@@ -239,9 +258,7 @@ hr{
 
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {  
-  main{
-      margin-top: -25rem;
-  }
+
   .push-price{
     margin-left: 5%;
     margin-top: 0;
