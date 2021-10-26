@@ -212,7 +212,7 @@ strong {
     font-size: 1em;
 }
 .accordion-button{
-    font-size: 1em;
+    font-size: 3em !important;
     width: 30.5rem;
 }
 .flag{
