@@ -52,8 +52,15 @@
       .carousel{
           display: none;
       }
-      .carousel-item{
+      .carousel-control-prev, .carousel-control-next{
+          height: 40%;
+          margin-top: 20%;
+      }
+      .carousel-mobile{
           height: fit-content;
+      }
+      .carousel-item{
+          height: min-content;
       }
       .carousel-mobile{
           display: block;
