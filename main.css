@@ -197,7 +197,6 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* -----------------FOOTER------------------------- */
 footer{
-   
     height: 15rem;
     width: 100vw;
     display:flex;
@@ -206,12 +205,14 @@ footer{
     color: white;
     align-items: center;
     justify-content: space-between;
- /* position: absolute;
- bottom: 0; */
+
+ bottom: 0; 
+ margin: 0;
    
 }
 .contact-mobile{
     display: none;
+    color: white;
 }
 .logo-left{
     width: 18rem;
@@ -258,9 +259,28 @@ hr{
 .accordion-body{
     font-size: 2rem;
 }
+.about-bg{
+    width: 10rem;
+}
+.cuadro-about{
+    width: 100rem;
+    transform: rotateZ(-20deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -70rem;
+    margin-top: 10rem;
+    z-index: -10;
+}
+
+
 /* ____________________________RESPONSIVE______________________________ */
 
-
+/* @media only screen and (max-width: 1024px) {
+    footer{
+        background-color: aquamarine ;
+    }
+   } */
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {  
 
   .push-price{
