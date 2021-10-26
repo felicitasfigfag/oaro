@@ -36,9 +36,12 @@ font-family: 'Roboto Condensed', sans-serif;
   }
 nav{
   height: 10rem;
+  width: 95vw;
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 nav a{
   color: var(--violeta);
@@ -53,17 +56,33 @@ nav a{
   width: 20rem;
   margin: 2rem;
 }
+.nav-right{
+position: absolute;
+right: 0;
+top: 0;display: flex;
+flex-direction: row;
+margin-top: 0.5rem;
+margin-right: 0;
+}
+.flag{
+  width: 2rem;
+}
 /*-------------------------HEADER.---------------------- */
   header{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     
   }
+  .carousel-item{
+    height: 90vh;
+  }
 .item{
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
-
+.portada-mobile{
+  display: none;
+}
 .suscribe, .banner{
   position: absolute; 
   z-index: 100;
@@ -75,10 +94,62 @@ nav a{
 .slide1, .slide2{
   position: relative;
   box-shadow:  4px 11px 11px #00000029;
+  height: 90vh;
+}
+
+.slide-item{
+  display: grid;
+  width: 100%;
+  height: 90vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  background-color: white;
+}
+.slide-rigth{
+  justify-self: flex-start;
+  grid-column: 2/3;
+  background-image: url("./assets/Portada\ Landing\ ESP\ title.png");
+  background-position: right;
+
+}
+.slide-rigth-eng{
+  background-image: url("./assets/Portada\ Landing\ title.png");
+}
+
+.slide-left{
+  grid-column: 1/2;
+  background-image: url("./assets/Portada\ Landing.png");
+  background-position-y: bottom;
+  background-position-x: left;
+}
+.slide-left, .slide-rigth{
+  width: 50vw;
+  height: 90vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*----------------------- SLIDE2 ---------------*/
+.banner{
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  background-image: url("./assets/Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-eng{
+
+  background-image: url("./assets/Banner\ eng.png");
+ 
 }
 .banner-btn{
   background-color: var(--naranja) !important;
-  width: 4rem;
+  width: 15rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 .banner-btn a{
   color: white;
@@ -89,7 +160,8 @@ nav a{
 .banner-btn a:hover{
   color: var(--violeta);
 }
-.suscribe-title{
+/* SECTOR DEPRECADO: SUSCRIBE. Lo dejo para que quede listo para la implementacion */
+/* .suscribe-title{
   color:var(--naranja);
   font-size: 2em;
   font-family: "Gobold", "Roboto Condensed";
@@ -125,13 +197,16 @@ nav a{
 }
 .btn:hover{
   background-color: var(--violeta-claro);
-}
+} */
 .slide-btn{
   height: 5rem;
 }
 /* animation */
 .animate__slideInLeft, .animate__slideInRight{
   --animate-duration: 2s;
+  --animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /* ------------MEDIA QUERIES ------------------ */
