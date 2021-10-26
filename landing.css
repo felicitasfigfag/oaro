@@ -131,7 +131,7 @@ margin-right: 0;
 /*----------------------- SLIDE2 ---------------*/
 .banner{
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   background-image: url("./assets/Banner.png");
   background-repeat: no-repeat;
