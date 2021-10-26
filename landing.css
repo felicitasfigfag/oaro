@@ -135,9 +135,9 @@ margin-right: 0;
 .banner{
 
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end;
   align-content: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -152,6 +152,8 @@ margin-right: 0;
 
 .banner_text_spa{
   background-image: url("./assets/Banner_fondo_es.png");
+  align-self: flex-start;
+  justify-self: flex-start;
 }
 .banner_text_eng{
 
