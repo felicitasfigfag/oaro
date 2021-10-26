@@ -41,17 +41,30 @@
         right: 0;
         margin-right: 2rem;
       }
-      /* HERO */
+      /*------------------- HERO -------------------*/
       header{
         width: 100vw;
         height: fit-content;
       }
+      .slide-item{
+          display: none;
+      }
       .carousel{
           display: none;
       }
-      .portada-mobile{
+      .carousel-item{
+          height: fit-content;
+      }
+      .carousel-mobile{
           display: block;
-          width: 100vw;
+      }
+      .banner-btn{
+          width: 15%;
+          height: 3rem;
+          padding: 0;
+          font-size: 2em;
+      }.banner-btn a{
+        font-size: 1em;
       }
       /* MAIN */
       main{
