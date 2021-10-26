@@ -272,15 +272,3 @@ hr{
     
 }  }
 @media only screen and (max-width: 1500px) and (min-width: 1366px) {  
-    main{
-        margin-top: -10rem;
-    }
-    .push-price{
-      margin-left: 5%;
-      margin-top: 0;
-    }
-    .push-btn{
-      margin-right: 10%;
-      margin-top: 0;
-      
-  }  }
