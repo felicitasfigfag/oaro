@@ -14,8 +14,11 @@
 
    
 }
+.contenedor{
+    width: 100vw;
+}
 .about-container{
-    width: 100rem;
+     width: 100rem; 
   
     justify-self: center;
     overflow-x: hidden;
@@ -29,11 +32,11 @@
      margin: 5rem;
 }
 .accordion-button{
-    font-size: 2rem;
-    width: 100rem;
     color: var(--violeta);
-     border: var(--naranja) solid 2px; 
-     font-family: "Roboto";
+    font-size: 2rem !important;
+    font-weight: bold;
+    /* width: 100rem; */
+     font-family: "Roboto", sans-serif;
      font-weight: bold;
 }
 .accordion-body{
@@ -41,21 +44,18 @@
     background-color: #f7f7f7d0;
     padding: 10rem;
 }
-i, strong{
+ strong, i{
     font-size: 2rem;
     color: rgb(20, 20, 20) !important;
 }
-.accordion-collapse{
-    border: var(--naranja) solid 1px; 
- 
-}
+
 /* -----------------FOOTER------------------------- */
 
 .about-bg{
-    width: 10rem;
+    width: 5rem;
 }
 .cuadro-about{
-    width: 100rem;
+    width: 50%;
     transform: rotateZ(-20deg);
     position: absolute;
     right: 0;
