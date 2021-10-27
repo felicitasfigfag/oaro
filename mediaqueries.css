@@ -203,19 +203,24 @@
     width: 35rem;
     ;
 }
-
+.about-title{
+    font-size: 5em;;
+}
 .accordion-body{
     padding: 2rem;
     font-size: 1.5em;
 }
-strong {
+strong, i {
     font-size: 1em;
 }
 .accordion-button{
-    font-size: 3em !important;
+    font-size: 1em !important;
     width: 30.5rem;
 }
 .flag{
     width: 1.1rem;
+  }
+  .accordion-body{
+      font-size: 1.3em;
   }
 }
